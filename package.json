@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generateStudents": "node students-generator"
+    "generateData": "node students-generator",
+    "start": "node main"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/armenix74/ramda-test-1#readme",
   "dependencies": {
-    "faker": "^4.1.0"
+    "faker": "^4.1.0",
+    "ramda": "^0.27.0"
   }
 }

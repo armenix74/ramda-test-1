@@ -3,7 +3,7 @@ const fs = require('fs');
 
 let rawdata = fs.readFileSync('students.json');
 let students = JSON.parse(rawdata);
-
+const averageThreshold = 16;
 
 const studentAvgScore = student => {
     const studentScores = [];
@@ -50,20 +50,22 @@ const bestScoredStudents = (students) => {
 
 
 console.log('================================');
-console.log('SCORED STUDENTS');
+console.log('ALL SCORED STUDENTS');
 console.log('================================');
 console.log('students list: ', scoredStudents(students));
 
 console.log('================================');
-console.log('STUDENTS WITH AVG SCORE GREATER THAN 20');
+console.log('STUDENTS WITH AVG SCORE GREATER THAN ', averageThreshold);
 console.log('================================');
 
-const scope = studentsWithScoreAboveValuePiped(16, students)
-console.log('There are ', R.length(scope), 'students');
-console.log('Students: ', scope);
+const scope = studentsWithScoreAboveValuePiped(averageThreshold, students)
+console.log('There are', R.length(scope), 'students having an average score greater than', averageThreshold);
+console.log('Students:');
+console.log(scope);
 console.log('================================');
 console.log('BEST STUDENT');
 console.log('================================');
-console.log('The best student is: ', bestScoredStudents(students));
+console.log('The best student is: ')
+console.log(bestScoredStudents(students));
 
 
