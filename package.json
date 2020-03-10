@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generateStudents": "node student-generator"
+    "generateStudents": "node students-generator"
   },
   "repository": {
     "type": "git",

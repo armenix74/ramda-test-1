@@ -7,7 +7,8 @@ let students = [];
 let i = 0;
 while (i < 10) {
     let student = {
-        first: faker.name.firstName(), last: faker.name.lastName(),
+        first: faker.name.firstName(),
+        last: faker.name.lastName(),
         results: [{
             courseName: "ElasticSearch",
             score: faker.random.number(30)
