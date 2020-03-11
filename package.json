@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/armenix74/ramda-test-1#readme",
   "dependencies": {
+    "array-to-table": "^1.0.1",
     "faker": "^4.1.0",
     "ramda": "^0.27.0"
   }
